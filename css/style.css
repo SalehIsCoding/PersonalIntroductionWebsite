@@ -1,0 +1,113 @@
+@import url('https://fonts.google.com/download?family=Playfair%20Display');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'playfair';
+    overflow: hidden;
+}
+
+.website-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    color: #0099ff;
+    font-size: 2em;
+    margin: 5vh 1vw 0 1vw;
+}
+
+.main-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header-bg {
+    position: absolute;
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+}
+
+.footer-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-media {
+    margin: 5vh 15vw;
+}
+
+.social-media>* {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #0099ff;
+    margin: 0 4vw;
+}
+
+a {
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.5);
+    margin: 1vh 1vw;
+}
+
+.nav-img {
+    transition: 0.5s ease;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #0099ff;
+}
+
+.nav-subtitle {
+    color: lightslategray;
+}
+
+@media only screen and (min-width: 1200px) {
+    path {
+        padding-bottom: 0;
+    }
+    .nav-img {
+        width: 300px;
+        height: 300px;
+    }
+    .nav-img:hover {
+        transform: scale(1.1);
+        margin: 4vh 2vw;
+    }
+    .header-bg {
+        top: -20%;
+        background: transparent;
+    }
+    .footer-bg {
+        bottom: -20%;
+    }
+    .nav-title {
+        font-size: 3em;
+    }
+    .nav-subtitle {
+        font-size: 1.5rem;
+    }
+    .social-media>* {
+        margin: 0 1.5vw;
+        font-size: 2.6rem;
+    }
+}
